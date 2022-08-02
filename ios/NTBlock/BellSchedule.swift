@@ -1071,7 +1071,11 @@ func determineDayColor() -> NewTrierColors {
     //Check for weekend and set color to gray
     let weekday = calendar.dateComponents([.weekday], from: today).weekday!
     
-    if weekday == 1 || weekday == 7 {
+    if today.compare(openingDay!) == .orderedAscending {
+        return .gray
+    }
+    
+    if weekday == 1 || weekday == 7 { //1 is Sunday in Swift
         return .gray
     }
     

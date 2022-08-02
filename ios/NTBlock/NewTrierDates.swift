@@ -9,8 +9,6 @@ import UIKit
 
 var calendar = Calendar(identifier: .gregorian)
 
-//TODO: Search for 2021 & 2022 (in spring) to make sure all years are correct.
-
 //Define Holidays
 let holiday0 = calendar.date(from: DateComponents(calendar: calendar, timeZone: TimeZone.init(identifier: "America/Chicago")!, year: 2022, month: 9, day: 5))
 let holiday1 = calendar.date(from: DateComponents(calendar: calendar, timeZone: TimeZone.init(identifier: "America/Chicago")!, year: 2022, month: 9, day: 23))
@@ -278,10 +276,9 @@ let blueDays = [
 ]
 
 
-//TODO: CHANGE BACK TO 8/22
 
 //Define anchor days
-let openingDay = calendar.date(from: DateComponents(calendar: calendar, timeZone: TimeZone.init(identifier: "America/Chicago")!, year: 2022, month: 7, day: 26))
+let openingDay = calendar.date(from: DateComponents(calendar: calendar, timeZone: TimeZone.init(identifier: "America/Chicago")!, year: 2022, month: 8, day: 22))
 let anchor1 = calendar.date(from: DateComponents(calendar: calendar, timeZone: TimeZone.init(identifier: "America/Chicago")!, year: 2022, month: 8, day: 31))
 let anchor2 = calendar.date(from: DateComponents(calendar: calendar, timeZone: TimeZone.init(identifier: "America/Chicago")!, year: 2022, month: 9, day: 14))
 let anchor3 = calendar.date(from: DateComponents(calendar: calendar, timeZone: TimeZone.init(identifier: "America/Chicago")!, year: 2022, month: 10, day: 12))
