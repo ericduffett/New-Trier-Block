@@ -271,8 +271,6 @@ class _BellScheduleHomeState extends State<BellScheduleHome> with WidgetsBinding
     }
 
 
-    //TODO: Test on Android
-
   }
 
   void determineDayColor() {
@@ -285,8 +283,8 @@ class _BellScheduleHomeState extends State<BellScheduleHome> with WidgetsBinding
     });
 
   //Define first and last day of school for use below to make background gray.
-    final firstDayOfSchool = DateTime(2022, 7, 22); //TODO: Change to 8/22
-    final lastDayOfSchool = DateTime(2023, 6, 9);
+    final firstDayOfSchool = DateTime(2022, 8, 22);
+    final lastDayOfSchool = DateTime(2023, 6, 9, 23, 59);
 
 
     //Before or after the school yaer.
@@ -434,8 +432,7 @@ class _BellScheduleHomeState extends State<BellScheduleHome> with WidgetsBinding
     }
 
     //First day of school
-    //TODO: Change back to 8/22
-    if (today.year == 2022 && today.month == 7 && today.day == 26) {
+    if (today.year == 2022 && today.month == 8 && today.day == 22) {
 
       setState(() {
         dayColor = NewTrierColors.yellow;
@@ -832,57 +829,57 @@ class _BellScheduleHomeState extends State<BellScheduleHome> with WidgetsBinding
           //Opening Day Bell Schedule here for original countdown timers.
           //Winnetka
           final chicago = timezones.getLocation('America/Chicago');
-          // final morningAdvStart = timezones.TZDateTime(chicago, 2022, 8, 22, 8, 20);
-          // final morningAdvEnd = timezones.TZDateTime(chicago, 2022, 8, 22, 10, 10);
-          // final start1 = timezones.TZDateTime(chicago, 2022, 8, 22, 10, 15);
-          // final end1 = timezones.TZDateTime(chicago, 2022, 8, 22, 10, 40);
-          // final start2 = timezones.TZDateTime(chicago, 2022, 8, 22, 10, 45);
-          // final end2 = timezones.TZDateTime(chicago, 2022, 8, 22, 11, 10);
-          // final start3 = timezones.TZDateTime(chicago, 2022, 8, 22, 11, 15);
-          // final end3 = timezones.TZDateTime(chicago, 2022, 8, 22, 11, 40);
-          // final start4a = timezones.TZDateTime(chicago, 2022, 8, 22, 11, 45);
-          // final end4a = timezones.TZDateTime(chicago, 2022, 8, 22, 12, 10);
-          // final start4b = timezones.TZDateTime(chicago, 2022, 8, 22, 12, 15);
-          // final end4b = timezones.TZDateTime(chicago, 2022, 8, 22, 12, 40);
-          // final start4c = timezones.TZDateTime(chicago, 2022, 8, 22, 12, 45);
-          // final end4c = timezones.TZDateTime(chicago, 2022, 8, 22, 13, 10);
-          // final start5 = timezones.TZDateTime(chicago, 2022, 8, 22, 13, 15);
-          // final end5 = timezones.TZDateTime(chicago, 2022, 8, 22, 13, 40);
-          // final start6 = timezones.TZDateTime(chicago, 2022, 8, 22, 13, 45);
-          // final end6 = timezones.TZDateTime(chicago, 2022, 8, 22, 14, 10);
-          // final start7 = timezones.TZDateTime(chicago, 2022, 8, 22, 14, 15);
-          // final end7 = timezones.TZDateTime(chicago, 2022, 8, 22, 14, 40);
-          // final start8 = timezones.TZDateTime(chicago, 2022, 8, 22, 14, 45);
-          // final end8 = timezones.TZDateTime(chicago, 2022, 8, 22, 15, 10);
-          // final specialAdvStart = timezones.TZDateTime(chicago, 2022, 8, 22, 15, 15);
-          // final specialAdvEnd = timezones.TZDateTime(chicago, 2022, 8, 22, 15, 30);
+          final morningAdvStart = timezones.TZDateTime(chicago, 2022, 8, 22, 8, 20);
+          final morningAdvEnd = timezones.TZDateTime(chicago, 2022, 8, 22, 10, 10);
+          final start1 = timezones.TZDateTime(chicago, 2022, 8, 22, 10, 15);
+          final end1 = timezones.TZDateTime(chicago, 2022, 8, 22, 10, 40);
+          final start2 = timezones.TZDateTime(chicago, 2022, 8, 22, 10, 45);
+          final end2 = timezones.TZDateTime(chicago, 2022, 8, 22, 11, 10);
+          final start3 = timezones.TZDateTime(chicago, 2022, 8, 22, 11, 15);
+          final end3 = timezones.TZDateTime(chicago, 2022, 8, 22, 11, 40);
+          final start4a = timezones.TZDateTime(chicago, 2022, 8, 22, 11, 45);
+          final end4a = timezones.TZDateTime(chicago, 2022, 8, 22, 12, 10);
+          final start4b = timezones.TZDateTime(chicago, 2022, 8, 22, 12, 15);
+          final end4b = timezones.TZDateTime(chicago, 2022, 8, 22, 12, 40);
+          final start4c = timezones.TZDateTime(chicago, 2022, 8, 22, 12, 45);
+          final end4c = timezones.TZDateTime(chicago, 2022, 8, 22, 13, 10);
+          final start5 = timezones.TZDateTime(chicago, 2022, 8, 22, 13, 15);
+          final end5 = timezones.TZDateTime(chicago, 2022, 8, 22, 13, 40);
+          final start6 = timezones.TZDateTime(chicago, 2022, 8, 22, 13, 45);
+          final end6 = timezones.TZDateTime(chicago, 2022, 8, 22, 14, 10);
+          final start7 = timezones.TZDateTime(chicago, 2022, 8, 22, 14, 15);
+          final end7 = timezones.TZDateTime(chicago, 2022, 8, 22, 14, 40);
+          final start8 = timezones.TZDateTime(chicago, 2022, 8, 22, 14, 45);
+          final end8 = timezones.TZDateTime(chicago, 2022, 8, 22, 15, 10);
+          final specialAdvStart = timezones.TZDateTime(chicago, 2022, 8, 22, 15, 15);
+          final specialAdvEnd = timezones.TZDateTime(chicago, 2022, 8, 22, 15, 30);
 
 
-          //TODO: Adjusted bells for testing. Comment this out and uncomment actual schedule.
-          final morningAdvStart = timezones.TZDateTime(chicago, 2022, 7, 26, 8, 20);
-          final morningAdvEnd = timezones.TZDateTime(chicago, 2022, 7, 26, 10, 10);
-          final start1 = timezones.TZDateTime(chicago, 2022, 7, 26, 10, 15);
-          final end1 = timezones.TZDateTime(chicago, 2022, 7, 26, 10, 40);
-          final start2 = timezones.TZDateTime(chicago, 2022, 7, 26, 10, 45);
-          final end2 = timezones.TZDateTime(chicago, 2022, 7, 26, 11, 10);
-          final start3 = timezones.TZDateTime(chicago, 2022, 7, 26, 11, 15);
-          final end3 = timezones.TZDateTime(chicago, 2022, 7, 26, 11, 40);
-          final start4a = timezones.TZDateTime(chicago, 2022, 7, 26, 11, 45);
-          final end4a = timezones.TZDateTime(chicago, 2022, 7, 26, 12, 10);
-          final start4b = timezones.TZDateTime(chicago, 2022, 7, 26, 12, 15);
-          final end4b = timezones.TZDateTime(chicago, 2022, 7, 26, 12, 40);
-          final start4c = timezones.TZDateTime(chicago, 2022, 7, 26, 12, 45);
-          final end4c = timezones.TZDateTime(chicago, 2022, 7, 26, 13, 10);
-          final start5 = timezones.TZDateTime(chicago, 2022, 7, 26, 13, 15);
-          final end5 = timezones.TZDateTime(chicago, 2022, 7, 26, 13, 40);
-          final start6 = timezones.TZDateTime(chicago, 2022, 7, 26, 13, 45);
-          final end6 = timezones.TZDateTime(chicago, 2022, 7, 26, 14, 10);
-          final start7 = timezones.TZDateTime(chicago, 2022, 7, 26, 14, 15);
-          final end7 = timezones.TZDateTime(chicago, 2022, 7, 26, 14, 40);
-          final start8 = timezones.TZDateTime(chicago, 2022, 7, 26, 14, 45);
-          final end8 = timezones.TZDateTime(chicago, 2022, 7, 26, 15, 10);
-          final specialAdvStart = timezones.TZDateTime(chicago, 2022, 7, 26, 15, 15);
-          final specialAdvEnd = timezones.TZDateTime(chicago, 2022, 7, 26, 15, 30);
+          //Date Adjusted bells for testing. Comment this out and uncomment actual schedule.
+          // final morningAdvStart = timezones.TZDateTime(chicago, 2022, 7, 26, 8, 20);
+          // final morningAdvEnd = timezones.TZDateTime(chicago, 2022, 7, 26, 10, 10);
+          // final start1 = timezones.TZDateTime(chicago, 2022, 7, 26, 10, 15);
+          // final end1 = timezones.TZDateTime(chicago, 2022, 7, 26, 10, 40);
+          // final start2 = timezones.TZDateTime(chicago, 2022, 7, 26, 10, 45);
+          // final end2 = timezones.TZDateTime(chicago, 2022, 7, 26, 11, 10);
+          // final start3 = timezones.TZDateTime(chicago, 2022, 7, 26, 11, 15);
+          // final end3 = timezones.TZDateTime(chicago, 2022, 7, 26, 11, 40);
+          // final start4a = timezones.TZDateTime(chicago, 2022, 7, 26, 11, 45);
+          // final end4a = timezones.TZDateTime(chicago, 2022, 7, 26, 12, 10);
+          // final start4b = timezones.TZDateTime(chicago, 2022, 7, 26, 12, 15);
+          // final end4b = timezones.TZDateTime(chicago, 2022, 7, 26, 12, 40);
+          // final start4c = timezones.TZDateTime(chicago, 2022, 7, 26, 12, 45);
+          // final end4c = timezones.TZDateTime(chicago, 2022, 7, 26, 13, 10);
+          // final start5 = timezones.TZDateTime(chicago, 2022, 7, 26, 13, 15);
+          // final end5 = timezones.TZDateTime(chicago, 2022, 7, 26, 13, 40);
+          // final start6 = timezones.TZDateTime(chicago, 2022, 7, 26, 13, 45);
+          // final end6 = timezones.TZDateTime(chicago, 2022, 7, 26, 14, 10);
+          // final start7 = timezones.TZDateTime(chicago, 2022, 7, 26, 14, 15);
+          // final end7 = timezones.TZDateTime(chicago, 2022, 7, 26, 14, 40);
+          // final start8 = timezones.TZDateTime(chicago, 2022, 7, 26, 14, 45);
+          // final end8 = timezones.TZDateTime(chicago, 2022, 7, 26, 15, 10);
+          // final specialAdvStart = timezones.TZDateTime(chicago, 2022, 7, 26, 15, 15);
+          // final specialAdvEnd = timezones.TZDateTime(chicago, 2022, 7, 26, 15, 30);
 
           if (now.isBefore(morningAdvStart)) {
             currentPeriod = 'Before Advisery';
@@ -1213,57 +1210,57 @@ class _BellScheduleHomeState extends State<BellScheduleHome> with WidgetsBinding
           //Opening Day Bell Schedule here for original countdown timers.
           //Northfield
           final chicago = timezones.getLocation('America/Chicago');
-          // final advTourStart = timezones.TZDateTime(chicago, 2022, 8, 22, 8, 00);
-          // final advTourEnd = timezones.TZDateTime(chicago, 2022, 8, 22, 8, 30);
-          // final assemblyStart = timezones.TZDateTime(chicago, 2022, 8, 22, 8, 45);
-          // final assemblyEnd = timezones.TZDateTime(chicago, 2022, 8, 22, 9, 15);
-          // final advLogisticsStart = timezones.TZDateTime(chicago, 2022, 8, 22, 9, 25);
-          // final advLogisticsEnd = timezones.TZDateTime(chicago, 2022, 8, 22, 10, 30);
-          // final lunchStart = timezones.TZDateTime(chicago, 2022, 8, 22, 10, 40);
-          // final lunchEnd = timezones.TZDateTime(chicago, 2022, 8, 22, 11, 10);
-          // final start1 = timezones.TZDateTime(chicago, 2022, 8, 22, 11, 15);
-          // final end1 = timezones.TZDateTime(chicago, 2022, 8, 22, 11, 40);
-          // final start2 = timezones.TZDateTime(chicago, 2022, 8, 22, 11, 45);
-          // final end2 = timezones.TZDateTime(chicago, 2022, 8, 22, 12, 10);
-          // final start3 = timezones.TZDateTime(chicago, 2022, 8, 22, 12, 15);
-          // final end3 = timezones.TZDateTime(chicago, 2022, 8, 22, 12, 40);
-          // final start4 = timezones.TZDateTime(chicago, 2022, 8, 22, 12, 45);
-          // final end4 = timezones.TZDateTime(chicago, 2022, 8, 22, 13, 10);
-          // final start5 = timezones.TZDateTime(chicago, 2022, 8, 22, 13, 15);
-          // final end5 = timezones.TZDateTime(chicago, 2022, 8, 22, 13, 40);
-          // final start6 = timezones.TZDateTime(chicago, 2022, 8, 22, 13, 45);
-          // final end6 = timezones.TZDateTime(chicago, 2022, 8, 22, 14, 10);
-          // final start7 = timezones.TZDateTime(chicago, 2022, 8, 22, 14, 15);
-          // final end7 = timezones.TZDateTime(chicago, 2022, 8, 22, 14, 40);
-          // final start8 = timezones.TZDateTime(chicago, 2022, 8, 22, 14, 45);
-          // final end8 = timezones.TZDateTime(chicago, 2022, 8, 22, 15, 10);
+          final advTourStart = timezones.TZDateTime(chicago, 2022, 8, 22, 8, 00);
+          final advTourEnd = timezones.TZDateTime(chicago, 2022, 8, 22, 8, 30);
+          final assemblyStart = timezones.TZDateTime(chicago, 2022, 8, 22, 8, 45);
+          final assemblyEnd = timezones.TZDateTime(chicago, 2022, 8, 22, 9, 15);
+          final advLogisticsStart = timezones.TZDateTime(chicago, 2022, 8, 22, 9, 25);
+          final advLogisticsEnd = timezones.TZDateTime(chicago, 2022, 8, 22, 10, 30);
+          final lunchStart = timezones.TZDateTime(chicago, 2022, 8, 22, 10, 40);
+          final lunchEnd = timezones.TZDateTime(chicago, 2022, 8, 22, 11, 10);
+          final start1 = timezones.TZDateTime(chicago, 2022, 8, 22, 11, 15);
+          final end1 = timezones.TZDateTime(chicago, 2022, 8, 22, 11, 40);
+          final start2 = timezones.TZDateTime(chicago, 2022, 8, 22, 11, 45);
+          final end2 = timezones.TZDateTime(chicago, 2022, 8, 22, 12, 10);
+          final start3 = timezones.TZDateTime(chicago, 2022, 8, 22, 12, 15);
+          final end3 = timezones.TZDateTime(chicago, 2022, 8, 22, 12, 40);
+          final start4 = timezones.TZDateTime(chicago, 2022, 8, 22, 12, 45);
+          final end4 = timezones.TZDateTime(chicago, 2022, 8, 22, 13, 10);
+          final start5 = timezones.TZDateTime(chicago, 2022, 8, 22, 13, 15);
+          final end5 = timezones.TZDateTime(chicago, 2022, 8, 22, 13, 40);
+          final start6 = timezones.TZDateTime(chicago, 2022, 8, 22, 13, 45);
+          final end6 = timezones.TZDateTime(chicago, 2022, 8, 22, 14, 10);
+          final start7 = timezones.TZDateTime(chicago, 2022, 8, 22, 14, 15);
+          final end7 = timezones.TZDateTime(chicago, 2022, 8, 22, 14, 40);
+          final start8 = timezones.TZDateTime(chicago, 2022, 8, 22, 14, 45);
+          final end8 = timezones.TZDateTime(chicago, 2022, 8, 22, 15, 10);
 
 
-          //TODO: Comment out testing schedule and uncomment actual schedule.
-          final advTourStart = timezones.TZDateTime(chicago, 2022, 7, 26, 8, 00);
-          final advTourEnd = timezones.TZDateTime(chicago, 2022, 7, 26, 8, 30);
-          final assemblyStart = timezones.TZDateTime(chicago, 2022, 7, 26, 8, 45);
-          final assemblyEnd = timezones.TZDateTime(chicago, 2022, 7, 26, 9, 15);
-          final advLogisticsStart = timezones.TZDateTime(chicago, 2022, 7, 26, 9, 25);
-          final advLogisticsEnd = timezones.TZDateTime(chicago, 2022, 7, 26, 10, 30);
-          final lunchStart = timezones.TZDateTime(chicago, 2022, 7, 26, 10, 40);
-          final lunchEnd = timezones.TZDateTime(chicago, 2022, 7, 26, 11, 10);
-          final start1 = timezones.TZDateTime(chicago, 2022, 7, 26, 11, 15);
-          final end1 = timezones.TZDateTime(chicago, 2022, 7, 26, 11, 40);
-          final start2 = timezones.TZDateTime(chicago, 2022, 7, 26, 11, 45);
-          final end2 = timezones.TZDateTime(chicago, 2022, 7, 26, 12, 10);
-          final start3 = timezones.TZDateTime(chicago, 2022, 7, 26, 12, 15);
-          final end3 = timezones.TZDateTime(chicago, 2022, 7, 26, 12, 40);
-          final start4 = timezones.TZDateTime(chicago, 2022, 7, 26, 12, 45);
-          final end4 = timezones.TZDateTime(chicago, 2022, 7, 26, 13, 10);
-          final start5 = timezones.TZDateTime(chicago, 2022, 7, 26, 13, 15);
-          final end5 = timezones.TZDateTime(chicago, 2022, 7, 26, 13, 40);
-          final start6 = timezones.TZDateTime(chicago, 2022, 7, 26, 13, 45);
-          final end6 = timezones.TZDateTime(chicago, 2022, 7, 26, 14, 10);
-          final start7 = timezones.TZDateTime(chicago, 2022, 7, 26, 14, 15);
-          final end7 = timezones.TZDateTime(chicago, 2022, 7, 26, 14, 40);
-          final start8 = timezones.TZDateTime(chicago, 2022, 7, 26, 14, 45);
-          final end8 = timezones.TZDateTime(chicago, 2022, 7, 26, 15, 10);
+          //Comment out testing schedule and uncomment actual schedule.
+          // final advTourStart = timezones.TZDateTime(chicago, 2022, 7, 26, 8, 00);
+          // final advTourEnd = timezones.TZDateTime(chicago, 2022, 7, 26, 8, 30);
+          // final assemblyStart = timezones.TZDateTime(chicago, 2022, 7, 26, 8, 45);
+          // final assemblyEnd = timezones.TZDateTime(chicago, 2022, 7, 26, 9, 15);
+          // final advLogisticsStart = timezones.TZDateTime(chicago, 2022, 7, 26, 9, 25);
+          // final advLogisticsEnd = timezones.TZDateTime(chicago, 2022, 7, 26, 10, 30);
+          // final lunchStart = timezones.TZDateTime(chicago, 2022, 7, 26, 10, 40);
+          // final lunchEnd = timezones.TZDateTime(chicago, 2022, 7, 26, 11, 10);
+          // final start1 = timezones.TZDateTime(chicago, 2022, 7, 26, 11, 15);
+          // final end1 = timezones.TZDateTime(chicago, 2022, 7, 26, 11, 40);
+          // final start2 = timezones.TZDateTime(chicago, 2022, 7, 26, 11, 45);
+          // final end2 = timezones.TZDateTime(chicago, 2022, 7, 26, 12, 10);
+          // final start3 = timezones.TZDateTime(chicago, 2022, 7, 26, 12, 15);
+          // final end3 = timezones.TZDateTime(chicago, 2022, 7, 26, 12, 40);
+          // final start4 = timezones.TZDateTime(chicago, 2022, 7, 26, 12, 45);
+          // final end4 = timezones.TZDateTime(chicago, 2022, 7, 26, 13, 10);
+          // final start5 = timezones.TZDateTime(chicago, 2022, 7, 26, 13, 15);
+          // final end5 = timezones.TZDateTime(chicago, 2022, 7, 26, 13, 40);
+          // final start6 = timezones.TZDateTime(chicago, 2022, 7, 26, 13, 45);
+          // final end6 = timezones.TZDateTime(chicago, 2022, 7, 26, 14, 10);
+          // final start7 = timezones.TZDateTime(chicago, 2022, 7, 26, 14, 15);
+          // final end7 = timezones.TZDateTime(chicago, 2022, 7, 26, 14, 40);
+          // final start8 = timezones.TZDateTime(chicago, 2022, 7, 26, 14, 45);
+          // final end8 = timezones.TZDateTime(chicago, 2022, 7, 26, 15, 10);
 
           if (now.isBefore(advTourStart)) {
             currentPeriod = 'Before Advisery';
@@ -1544,13 +1541,11 @@ class _BellScheduleHomeState extends State<BellScheduleHome> with WidgetsBinding
                         width: 20.0,
                       ),
                       onPressed: () async {
-                        //TODO: Package update coming that gets rid of bug where iOS returns integer and android returns bool.
+
                         dynamic isStudentInstalled = await LaunchApp.isAppInstalled(
                           androidPackageName: 'com.instructure.candroid',
                           iosUrlScheme: 'canvas-student://',
                         );
-
-                       // bool hasStudent = (isStudentInstalled == 0 || isStudentInstalled == false) ? false : true;
 
                         dynamic isTeacherInstalled = await LaunchApp.isAppInstalled(
                           androidPackageName: 'com.instructure.teacher',
@@ -1851,8 +1846,6 @@ class _ScheduleTableState extends State<ScheduleTable> {
   ];
 
   void updatePeriodInfo() {
-    //TODO: Show schedule for next school day on gray days.
-    //TODO: Create variable and use while loop?
 
     if (widget.campus == Campus.winnetka) {
 
@@ -2112,32 +2105,34 @@ class _ScheduleTableState extends State<ScheduleTable> {
 
               final now = DateTime.now();
               final chicago = timezones.getLocation('America/Chicago');
-              //TODO: Change back to correct date.
-              // final firstAdvStartWinn = timezones.TZDateTime(chicago, 2022, 8, 22, 8, 20);
-              // final firstAdvEndWinn = timezones.TZDateTime(chicago, 2022, 8, 22, 10, 10);
-              // final specialAdvStart = timezones.TZDateTime(chicago, 2022, 8, 22, 15, 15);
-              // final specialAdvEnd = timezones.TZDateTime(chicago, 2022, 8, 22, 15, 30);
 
-              final firstAdvStartWinn = timezones.TZDateTime(chicago, 2022, 7, 26, 8, 20);
-              final firstAdvEndWinn = timezones.TZDateTime(chicago, 2022, 7, 26, 10, 10);
+              final firstAdvStartWinn = timezones.TZDateTime(chicago, 2022, 8, 22, 8, 20);
+              final firstAdvEndWinn = timezones.TZDateTime(chicago, 2022, 8, 22, 10, 10);
+              final specialAdvStart = timezones.TZDateTime(chicago, 2022, 8, 22, 15, 15);
+              final specialAdvEnd = timezones.TZDateTime(chicago, 2022, 8, 22, 15, 30);
+
+              //Testing in Summer Dates
+              // final firstAdvStartWinn = timezones.TZDateTime(chicago, 2022, 7, 26, 8, 20);
+              // final firstAdvEndWinn = timezones.TZDateTime(chicago, 2022, 7, 26, 10, 10);
               final bool isFirstAdvWinn = now.isAfter(firstAdvStartWinn) && now.isBefore(firstAdvEndWinn);
-              final specialAdvStart = timezones.TZDateTime(chicago, 2022, 7, 26, 15, 15);
-              final specialAdvEnd = timezones.TZDateTime(chicago, 2022, 7, 26, 15, 30);
+              // final specialAdvStart = timezones.TZDateTime(chicago, 2022, 7, 26, 15, 15);
+              // final specialAdvEnd = timezones.TZDateTime(chicago, 2022, 7, 26, 15, 30);
               final bool isSpecialAdv = now.isAfter(specialAdvStart) && now.isBefore(specialAdvEnd);
 
-              //TODO: Change back to correct first date of school.
-              // final firstAdvStartNF = timezones.TZDateTime(chicago, 2022, 8, 22, 8, 00);
-              // final firstAdvEndNF = timezones.TZDateTime(chicago, 2022, 8, 22, 8, 30);
 
-              // final nfAdLogisticsStart = timezones.TZDateTime(chicago, 2022, 8, 22, 9, 25);
-              // final nfAdLogisticsEnd = timezones.TZDateTime(chicago, 2022, 8, 22, 10, 30);
+              final firstAdvStartNF = timezones.TZDateTime(chicago, 2022, 8, 22, 8, 00);
+              final firstAdvEndNF = timezones.TZDateTime(chicago, 2022, 8, 22, 8, 30);
 
-              final firstAdvStartNF = timezones.TZDateTime(chicago, 2022, 7, 26, 8, 00);
-              final firstAdvEndNF = timezones.TZDateTime(chicago, 2022, 7, 26, 8, 30);
+              final nfAdLogisticsStart = timezones.TZDateTime(chicago, 2022, 8, 22, 9, 25);
+              final nfAdLogisticsEnd = timezones.TZDateTime(chicago, 2022, 8, 22, 10, 30);
+
+              // Testing in summer dates
+              // final firstAdvStartNF = timezones.TZDateTime(chicago, 2022, 7, 26, 8, 00);
+              // final firstAdvEndNF = timezones.TZDateTime(chicago, 2022, 7, 26, 8, 30);
               final bool isFirstAdvNF = now.isAfter(firstAdvStartNF) && now.isBefore(firstAdvEndNF);
 
-              final nfAdLogisticsStart = timezones.TZDateTime(chicago, 2022, 7, 26, 9, 25);
-              final nfAdLogisticsEnd = timezones.TZDateTime(chicago, 2022, 7, 26, 10, 30);
+              // final nfAdLogisticsStart = timezones.TZDateTime(chicago, 2022, 7, 26, 9, 25);
+              // final nfAdLogisticsEnd = timezones.TZDateTime(chicago, 2022, 7, 26, 10, 30);
               final bool isNFLogisticsAdv = now.isAfter(nfAdLogisticsStart) && now.isBefore(nfAdLogisticsEnd);
 
               final bool advToOne = now.isAfter(endOfAdvisery) && now.isBefore(start1A);

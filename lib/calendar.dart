@@ -57,9 +57,9 @@ class _CalendarViewState extends State<CalendarView> {
                       var dayColorText = 'Green Day';
                       var studentSupportDayText = '';
                       if (index == day) {
-                        //TODO: Change date back to actual first day of school
+                        //TODO: Change to end of 2022-2023 school year once school year begins.
 
-                        if (calendarDay.isAfter(tz.TZDateTime(tz.getLocation('America/Chicago'), 2022, 6, 10, 23, 59)) && calendarDay.isBefore(tz.TZDateTime(tz.getLocation('America/Chicago'), 2022, 7, 18, 23, 59))) {
+                        if (calendarDay.isAfter(tz.TZDateTime(tz.getLocation('America/Chicago'), 2022, 6, 10, 23, 59)) && calendarDay.isBefore(tz.TZDateTime(tz.getLocation('America/Chicago'), 2022, 8, 17, 23, 59))) {
                           dayColor = NewTrierColors.gray;
                           dayColorText = 'No School - Summer Break';
                         }
@@ -84,8 +84,8 @@ class _CalendarViewState extends State<CalendarView> {
                           }
                         }
 
-                        //TODO: Change back to 8/22
-                        if (calendarDay.day == 25 && calendarDay.month == 7 && calendarDay.year == 2022) {
+                        //First Day of School
+                        if (calendarDay.day == 22 && calendarDay.month == 8 && calendarDay.year == 2022) {
                           dayColor = NewTrierColors.yellow;
                           dayColorText = 'Anchor Day';
                           studentSupportDayText = 'Special Schedule for the Opening Day of School.';
@@ -263,12 +263,16 @@ class _CalendarViewState extends State<CalendarView> {
                         //   }
                         // }
 
-                        if (calendarDay.day == 13 && calendarDay.month == 4 && calendarDay.year == 2022) {
-                          dayColorText = 'State Testing at Winnetka. Green Day at Northfield.';
+                        if (calendarDay.day == 12 && calendarDay.month == 4 && calendarDay.year == 2023) {
+                          dayColorText = 'State Testing at Winnetka. Anchor Day at Northfield.';
                         }
 
-                        if (calendarDay.day == 18 && calendarDay.month == 4 && calendarDay.year == 2022) {
-                          dayColorText = 'State Testing at Northfield. Green Day at Winnetka.';
+                        if (calendarDay.day == 19 && calendarDay.month == 4 && calendarDay.year == 2023) {
+                          dayColorText = 'State Testing at Northfield. Anchor Day at Winnetka.';
+                        }
+
+                        if (calendarDay.day == 17 && calendarDay.month == 5 && calendarDay.year == 2023) {
+                          studentSupportDayText = 'Last Day of School for Seniors.';
                         }
 
 

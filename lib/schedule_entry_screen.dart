@@ -2523,12 +2523,11 @@ class _NorthfieldAnchorDayScheduleEntryState extends State<NorthfieldAnchorDaySc
 
   Future<void> saveClassData() async {
     final prefs = await SharedPreferences.getInstance();
-    print(_adviseryRoomController.text);
     prefs.setString('adviseryRoom', _adviseryRoomController.text);
     prefs.setString('1AnchorClass', _1aClassController.text);
     prefs.setString('2AnchorClass', _1bClassController.text);
     prefs.setString('3AnchorClass', _2aClassController.text);
-    prefs.setString('4AnchorClass', _2bClassController.text); //TODO: Next 4 rows
+    prefs.setString('4AnchorClass', _2bClassController.text);
     prefs.setString('5AAnchorClass', _2cClassController.text);
     prefs.setString('5BAnchorClass', _3aClassController.text);
     prefs.setString('5CAnchorClass', _3bClassController.text);
@@ -2548,8 +2547,6 @@ class _NorthfieldAnchorDayScheduleEntryState extends State<NorthfieldAnchorDaySc
     prefs.setString('8AnchorRoom', _8RoomController.text);
   }
 
-  //TODO: Split into a Winnetka Anchor and Northfield Anchor.
-  //TODO: Going to have to change how we save the data.
 
   @override
   Widget build(BuildContext context) {
@@ -3157,8 +3154,6 @@ class _WinnetkaAnchorDayScheduleEntryState extends State<WinnetkaAnchorDaySchedu
     prefs.setString('8AnchorRoom', _8RoomController.text);
   }
 
-  //TODO: Split into a Winnetka Anchor and Northfield Anchor.
-  //TODO: Going to have to change how we save the data.
 
   @override
   Widget build(BuildContext context) {

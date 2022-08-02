@@ -51,86 +51,131 @@ final chicago = tz.getLocation('America/Chicago');
 // final blue44 = tz.TZDateTime(chicago, 2022, 6, 1);
 
 //Start 2022-2023 School Year
-final blue45 = tz.TZDateTime(chicago, 2022, 8, 23);
-final blue46 = tz.TZDateTime(chicago, 2022, 8, 25);
-final blue47 = tz.TZDateTime(chicago, 2022, 8, 29);
-final blue48 = tz.TZDateTime(chicago, 2022, 9, 1);
-final blue49 = tz.TZDateTime(chicago, 2022, 9, 6);
-final blue50 = tz.TZDateTime(chicago, 2022, 9, 8);
-final blue51 = tz.TZDateTime(chicago, 2022, 9, 12);
-final blue52 = tz.TZDateTime(chicago, 2022, 9, 15);
-final blue53 = tz.TZDateTime(chicago, 2022, 9, 19);
-final blue54 = tz.TZDateTime(chicago, 2022, 9, 21);
-final blue55 = tz.TZDateTime(chicago, 2022, 9, 27);
-final blue56 = tz.TZDateTime(chicago, 2022, 9, 29);
-final blue57 = tz.TZDateTime(chicago, 2022, 10, 3);
-final blue58 = tz.TZDateTime(chicago, 2022, 10, 6);
-final blue59 = tz.TZDateTime(chicago, 2022, 10, 10);
-final blue60 = tz.TZDateTime(chicago, 2022, 10, 13);
-final blue61 = tz.TZDateTime(chicago, 2022, 10, 17);
-final blue62 = tz.TZDateTime(chicago, 2022, 10, 20);
-final blue63 = tz.TZDateTime(chicago, 2022, 10, 24);
-final blue64 = tz.TZDateTime(chicago, 2022, 10, 27);
-final blue65 = tz.TZDateTime(chicago, 2022, 10, 31);
-final blue66 = tz.TZDateTime(chicago, 2022, 11, 3);
-final blue67 = tz.TZDateTime(chicago, 2022, 11, 7);
-final blue68 = tz.TZDateTime(chicago, 2022, 11, 14);
-final blue69 = tz.TZDateTime(chicago, 2022, 11, 17);
-final blue70 = tz.TZDateTime(chicago, 2022, 11, 21);
-final blue71 = tz.TZDateTime(chicago, 2022, 11, 28);
-final blue72 = tz.TZDateTime(chicago, 2022, 12, 1);
-final blue73 = tz.TZDateTime(chicago, 2022, 12, 5);
-final blue74 = tz.TZDateTime(chicago, 2022, 12, 8);
-final blue75 = tz.TZDateTime(chicago, 2022, 12, 12);
-final blue76 = tz.TZDateTime(chicago, 2022, 12, 15);
-final blue77 = tz.TZDateTime(chicago, 2022, 12, 19);
-//final blue78 = tz.TZDateTime(chicago, 2022, 12, 21);
-final blue79 = tz.TZDateTime(chicago, 2023, 1, 10);
-final blue80 = tz.TZDateTime(chicago, 2023, 1, 12);
-final blue81 = tz.TZDateTime(chicago, 2023, 1, 17);
-final blue82 = tz.TZDateTime(chicago, 2023, 1, 19);
-final blue1 = tz.TZDateTime(chicago, 2023, 1, 23); //Note blue 1 is day added in because of schedule change
-final blue2 = tz.TZDateTime(chicago, 2023, 1, 26); //Same for blue 2
-final blue83 = tz.TZDateTime(chicago, 2023, 1, 30);
-final blue84 = tz.TZDateTime(chicago, 2023, 2, 2);
-final blue85 = tz.TZDateTime(chicago, 2023, 2, 6);
-final blue86 = tz.TZDateTime(chicago, 2023, 2, 9);
-final blue87 = tz.TZDateTime(chicago, 2023, 2, 13);
-final blue88 = tz.TZDateTime(chicago, 2023, 2, 15);
-final blue89 = tz.TZDateTime(chicago, 2023, 2, 21);
-final blue90 = tz.TZDateTime(chicago, 2023, 2, 23);
-final blue91 = tz.TZDateTime(chicago, 2023, 2, 27);
-final blue92 = tz.TZDateTime(chicago, 2023, 3, 2);
-final blue93 = tz.TZDateTime(chicago, 2023, 3, 6);
-final blue94 = tz.TZDateTime(chicago, 2023, 3, 9);
-final blue95 = tz.TZDateTime(chicago, 2023, 3, 13);
-final blue96 = tz.TZDateTime(chicago, 2023, 3, 16);
-final blue97 = tz.TZDateTime(chicago, 2023, 3, 20);
-final blue98 = tz.TZDateTime(chicago, 2023, 3, 23);
-final blue99 = tz.TZDateTime(chicago, 2023, 4, 3);
-final blue100 = tz.TZDateTime(chicago, 2023, 4, 5);
-final blue101 = tz.TZDateTime(chicago, 2023, 4, 10);
-final blue102 = tz.TZDateTime(chicago, 2023, 4, 13);
-final blue103 = tz.TZDateTime(chicago, 2023, 4, 17);
-final blue104 = tz.TZDateTime(chicago, 2023, 4, 20);
-final blue105 = tz.TZDateTime(chicago, 2023, 4, 24);
-final blue106 = tz.TZDateTime(chicago, 2023, 4, 27);
-final blue107 = tz.TZDateTime(chicago, 2023, 5, 1);
-final blue108 = tz.TZDateTime(chicago, 2023, 5, 4);
-final blue109 = tz.TZDateTime(chicago, 2023, 5, 8);
-final blue110 = tz.TZDateTime(chicago, 2023, 5, 11);
-final blue111 = tz.TZDateTime(chicago, 2023, 5, 15);
-final blue112 = tz.TZDateTime(chicago, 2023, 5, 18);
-final blue113 = tz.TZDateTime(chicago, 2023, 5, 22);
-final blue114 = tz.TZDateTime(chicago, 2023, 5, 25);
-final blue115 = tz.TZDateTime(chicago, 2023, 5, 30);
-final blue116 = tz.TZDateTime(chicago, 2023, 6, 1);
+final blue0 = tz.TZDateTime(chicago, 2022, 8, 23);
+final blue1 = tz.TZDateTime(chicago, 2022, 8, 25);
+final blue2 = tz.TZDateTime(chicago, 2022, 8, 29);
+final blue3 = tz.TZDateTime(chicago, 2022, 9, 1);
+final blue4 = tz.TZDateTime(chicago, 2022, 9, 6);
+final blue5 = tz.TZDateTime(chicago, 2022, 9, 8);
+final blue6 = tz.TZDateTime(chicago, 2022, 9, 12);
+final blue7 = tz.TZDateTime(chicago, 2022, 9, 15);
+final blue8 = tz.TZDateTime(chicago, 2022, 9, 19);
+final blue9 = tz.TZDateTime(chicago, 2022, 9, 21);
+final blue10 = tz.TZDateTime(chicago, 2022, 9, 27);
+final blue11 = tz.TZDateTime(chicago, 2022, 9, 29);
+final blue12 = tz.TZDateTime(chicago, 2022, 10, 3);
+final blue13 = tz.TZDateTime(chicago, 2022, 10, 6);
+final blue14 = tz.TZDateTime(chicago, 2022, 10, 10);
+final blue15 = tz.TZDateTime(chicago, 2022, 10, 13);
+final blue16 = tz.TZDateTime(chicago, 2022, 10, 17);
+final blue17 = tz.TZDateTime(chicago, 2022, 10, 20);
+final blue18 = tz.TZDateTime(chicago, 2022, 10, 24);
+final blue19 = tz.TZDateTime(chicago, 2022, 10, 27);
+final blue20 = tz.TZDateTime(chicago, 2022, 10, 31);
+final blue21 = tz.TZDateTime(chicago, 2022, 11, 3);
+final blue22 = tz.TZDateTime(chicago, 2022, 11, 7);
+final blue23 = tz.TZDateTime(chicago, 2022, 11, 14);
+final blue24 = tz.TZDateTime(chicago, 2022, 11, 17);
+final blue25 = tz.TZDateTime(chicago, 2022, 11, 21);
+final blue26 = tz.TZDateTime(chicago, 2022, 11, 28);
+final blue27 = tz.TZDateTime(chicago, 2022, 12, 1);
+final blue28 = tz.TZDateTime(chicago, 2022, 12, 5);
+final blue29 = tz.TZDateTime(chicago, 2022, 12, 8);
+final blue30 = tz.TZDateTime(chicago, 2022, 12, 12);
+final blue31 = tz.TZDateTime(chicago, 2022, 12, 15);
+final blue32 = tz.TZDateTime(chicago, 2022, 12, 19);
+final blue33 = tz.TZDateTime(chicago, 2023, 1, 10);
+final blue34 = tz.TZDateTime(chicago, 2023, 1, 12);
+final blue35 = tz.TZDateTime(chicago, 2023, 1, 17);
+final blue36 = tz.TZDateTime(chicago, 2023, 1, 19);
+final blue37 = tz.TZDateTime(chicago, 2023, 1, 23);
+final blue38 = tz.TZDateTime(chicago, 2023, 1, 26);
+final blue39 = tz.TZDateTime(chicago, 2023, 1, 30);
+final blue40 = tz.TZDateTime(chicago, 2023, 2, 2);
+final blue41 = tz.TZDateTime(chicago, 2023, 2, 6);
+final blue42 = tz.TZDateTime(chicago, 2023, 2, 9);
+final blue43 = tz.TZDateTime(chicago, 2023, 2, 13);
+final blue44 = tz.TZDateTime(chicago, 2023, 2, 15);
+final blue45 = tz.TZDateTime(chicago, 2023, 2, 21);
+final blue46 = tz.TZDateTime(chicago, 2023, 2, 23);
+final blue47 = tz.TZDateTime(chicago, 2023, 2, 27);
+final blue48 = tz.TZDateTime(chicago, 2023, 3, 2);
+final blue49 = tz.TZDateTime(chicago, 2023, 3, 6);
+final blue50 = tz.TZDateTime(chicago, 2023, 3, 9);
+final blue51 = tz.TZDateTime(chicago, 2023, 3, 13);
+final blue52 = tz.TZDateTime(chicago, 2023, 3, 16);
+final blue53 = tz.TZDateTime(chicago, 2023, 3, 20);
+final blue54 = tz.TZDateTime(chicago, 2023, 3, 23);
+final blue55 = tz.TZDateTime(chicago, 2023, 4, 3);
+final blue56 = tz.TZDateTime(chicago, 2023, 4, 5);
+final blue57 = tz.TZDateTime(chicago, 2023, 4, 10);
+final blue58 = tz.TZDateTime(chicago, 2023, 4, 13);
+final blue59 = tz.TZDateTime(chicago, 2023, 4, 17);
+final blue60 = tz.TZDateTime(chicago, 2023, 4, 20);
+final blue61 = tz.TZDateTime(chicago, 2023, 4, 24);
+final blue62 = tz.TZDateTime(chicago, 2023, 4, 27);
+final blue63 = tz.TZDateTime(chicago, 2023, 5, 1);
+final blue64 = tz.TZDateTime(chicago, 2023, 5, 4);
+final blue65 = tz.TZDateTime(chicago, 2023, 5, 8);
+final blue66 = tz.TZDateTime(chicago, 2023, 5, 11);
+final blue67 = tz.TZDateTime(chicago, 2023, 5, 15);
+final blue68 = tz.TZDateTime(chicago, 2023, 5, 18);
+final blue69 = tz.TZDateTime(chicago, 2023, 5, 22);
+final blue70 = tz.TZDateTime(chicago, 2023, 5, 25);
+final blue71 = tz.TZDateTime(chicago, 2023, 5, 30);
+final blue72 = tz.TZDateTime(chicago, 2023, 6, 1);
 
-final blue999 = tz.TZDateTime(chicago, 2022, 7, 28);
+final blue999 = tz.TZDateTime(chicago, 2022, 7, 1);
+final blue1000 = tz.TZDateTime(chicago, 2022, 7, 4);
+final blue1001 = tz.TZDateTime(chicago, 2022, 7, 8);
+final blue1002 = tz.TZDateTime(chicago, 2022, 7, 11);
 
 final blueDays = [
-  blue1, //Leave this. Added for schedule change
-  blue2, //Leave this. Added when schedule changed
+  blue0,
+  blue1,
+  blue2,
+  blue3,
+  blue4,
+  blue5,
+  blue6,
+  blue7,
+  blue8,
+  blue9,
+  blue10,
+  blue11,
+  blue12,
+  blue13,
+  blue14,
+  blue15,
+  blue16,
+  blue17,
+  blue18,
+  blue19,
+  blue20,
+  blue21,
+  blue22,
+  blue23,
+  blue24,
+  blue25,
+  blue26,
+  blue27,
+  blue28,
+  blue29,
+  blue30,
+  blue31,
+  blue32,
+  blue33,
+  blue34,
+  blue35,
+  blue36,
+  blue37,
+  blue38,
+  blue39,
+  blue40,
+  blue41,
+  blue42,
+  blue43,
+  blue44,
   blue45,
   blue46,
   blue47,
@@ -159,50 +204,10 @@ final blueDays = [
   blue70,
   blue71,
   blue72,
-  blue73,
-  blue74,
-  blue75,
-  blue76,
-  blue77,
-  blue79, //No 78 because schedule changed
-  blue80,
-  blue81,
-  blue82,
-  blue83,
-  blue84,
-  blue85,
-  blue86,
-  blue87,
-  blue88,
-  blue89,
-  blue90,
-  blue91,
-  blue92,
-  blue93,
-  blue94,
-  blue95,
-  blue96,
-  blue97,
-  blue98,
-  blue99,
-  blue100,
-  blue101,
-  blue102,
-  blue103,
-  blue104,
-  blue105,
-  blue106,
-  blue107,
-  blue108,
-  blue109,
-  blue110,
-  blue111,
-  blue112,
-  blue113,
-  blue114,
-  blue115,
-  blue116,
-  blue999
+  blue999,
+  blue1000,
+  blue1001,
+  blue1002,
 ];
 
 //Define Anchor Days
@@ -235,7 +240,8 @@ final anchor24 = tz.TZDateTime(chicago, 2023, 5, 17);
 final anchor25 = tz.TZDateTime(chicago, 2023, 5, 24);
 final anchor26 = tz.TZDateTime(chicago, 2023, 6, 5);
 final anchor28 = tz.TZDateTime(chicago, 2023, 6, 9);
-final anchor99 = tz.TZDateTime(chicago, 2022, 7, 22);
+final anchor99 = tz.TZDateTime(chicago, 2022, 7, 3);
+final anchor991 = tz.TZDateTime(chicago, 2022, 7, 10);
 
 final anchorDays = [
   anchor1,
@@ -267,6 +273,7 @@ final anchorDays = [
   anchor27,
   anchor28,
   anchor99,
+  anchor991
 ];
 
 //Early Dismissal Dates
