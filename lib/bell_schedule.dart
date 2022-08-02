@@ -10,7 +10,7 @@ enum ScheduleType {
   anchor,
   earlyDismissal,
   anchorEarlyDismissal, //TODO: Set dates when this applies
-  openingDay, //TODO: Set dates when this applies - Add end of day advisery at Winn - Remove ABC lunch at NF
+  openingDay,
   treviaDay, //TODO: Both Campuses - Check with Mike on date. Also - identity project?
   freshmanGTSN, //TODO: Bell schedule.
   lateStart,
@@ -522,7 +522,7 @@ void setBellSchedule(Campus campus, ScheduleType scheduleType) {
      //Don't need end of day advisery at Northfield.
     }
     else if (scheduleType == ScheduleType.freshmanGTSN) {
-      //TODO: Bell schedule hasn't been release yet.
+      //TODO: Bell schedule hasn't been released yet.
     }
 
   }
